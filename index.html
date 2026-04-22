@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ali | Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body class="">
+    <!-- Navbar -->
+    <div class="navbar fixed backdrop-blur z-99 shadow-sm">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl font-semibold">Ali</a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li>
+            <a href="#about" class="hover:opacity-50">About</a>
+          </li>
+          <li>
+            <a href="#info" class="hover:opacity-50">Info</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:opacity-50">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <section class="h-screen relative">
+      <img
+        src="https://picsum.photos/1600/900?random=1"
+        class="w-full h-full object-cover"
+      />
+
+      <div
+        class="absolute inset-0 flex items-center justify-center text-center bg-base-300 opacity-80"
+      >
+        <div class="px-6">
+          <h1 class="text-5xl md:text-7xl font-semibold">Hi, I’m Ali.</h1>
+          <p class="mt-4 text-lg opacity-80">Clean. Simple. Thoughtful.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section (image + text) -->
+    <section id="about" class="grid md:grid-cols-2 min-h-screen">
+      <img
+        src="https://picsum.photos/800/1000?random=2"
+        class="w-full h-full object-cover"
+      />
+
+      <div class="flex items-center justify-center p-10">
+        <div class="max-w-md">
+          <h2 class="text-3xl font-semibold mb-4">About</h2>
+          <p class="opacity-80">
+            I'm a student who enjoys technology, design, and building clean
+            digital experiences. I focus on simplicity and usability.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info" class="grid md:grid-cols-2 min-h-screen">
+      <div class="flex items-center justify-center p-10 order-2 md:order-1">
+        <div class="max-w-md">
+          <h2 class="text-3xl font-semibold mb-4">Info</h2>
+          <div class="opacity-80 space-y-2">
+            <p>📍 Indonesia</p>
+            <p>🎓 Student</p>
+            <p>💻 Web Development</p>
+            <p>🚴‍♂️ Cycling</p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="https://picsum.photos/800/1000?random=3"
+        class="w-full h-full object-cover order-1 md:order-2"
+      />
+    </section>
+
+    <!-- Contact (big clean section) -->
+    <section
+      id="contact"
+      class="min-h-screen flex items-center justify-center bg-base-200"
+    >
+      <div class="max-w-md">
+        <h2 class="text-4xl font-semibold mb-10">Let's connect.</h2>
+
+        <div class="opacity-80 space-y-2">
+          <p>
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:ali.sunjayaa@gmail.com" class="underline"
+              >ali.sunjayaa@gmail.com</a
+            >
+          </p>
+          <p>
+            <i class="fa fa-instagram"></i>
+            <a href="https://instagram.com/alisunjaya_" class="underline"
+              >@alisunjaya_</a
+            >
+          </p>
+          <p>
+            <i class="fa fa-github"></i>
+            <a href="https://github.com/sunjayaali" class="underline"
+              >github.com/sunjayaali</a
+            >
+          </p>
+          <p>
+            <i class="fa fa-map-marker"></i> Jakarta, Indonesia (open to
+            relocation)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-sm">
+      <p class="opacity-80">© <span id="year"></span> Ali</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
